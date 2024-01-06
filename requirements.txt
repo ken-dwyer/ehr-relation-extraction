@@ -1,24 +1,88 @@
-spacy==2.3.2
-scispacy==0.2.5
-https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.2.5/en_ner_bc5cdr_md-0.2.5.tar.gz
-torch
-torchvision
-transformers==3.0.2
-numpy==1.19.2
-seqeval==1.2.2
-fastapi==0.61.2
-uvicorn==0.12.2
-pandas==1.1.2
-
-ipython
-filelock==3.0.12
-pydantic==1.7.2
-allennlp==1.1.0
-scikit-learn==0.23.2
-networkx==2.5
-matplotlib==3.3.1
-seaborn==0.11.0
-gunicorn==20.0.4
-uvicorn==0.12.2
-uvloop
-httptools
+accelerate==0.20.3 ; python_full_version == "3.10.12"
+annotated-types==0.6.0 ; python_full_version == "3.10.12"
+asttokens==2.4.1 ; python_full_version == "3.10.12"
+blis==0.7.11 ; python_full_version == "3.10.12"
+catalogue==2.0.10 ; python_full_version == "3.10.12"
+certifi==2023.11.17 ; python_full_version == "3.10.12"
+charset-normalizer==3.3.2 ; python_full_version == "3.10.12"
+click==8.1.7 ; python_full_version == "3.10.12"
+colorama==0.4.6 ; sys_platform == "win32" and python_full_version == "3.10.12" or platform_system == "Windows" and python_full_version == "3.10.12"
+confection==0.1.4 ; python_full_version == "3.10.12"
+conllu==4.5.3 ; python_full_version == "3.10.12"
+contourpy==1.2.0 ; python_full_version == "3.10.12"
+cycler==0.12.1 ; python_full_version == "3.10.12"
+cymem==2.0.8 ; python_full_version == "3.10.12"
+decorator==5.1.1 ; python_full_version == "3.10.12"
+en-ner-bc5cdr-md @ https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_ner_bc5cdr_md-0.5.3.tar.gz ; python_full_version == "3.10.12"
+exceptiongroup==1.2.0 ; python_full_version == "3.10.12"
+executing==2.0.1 ; python_full_version == "3.10.12"
+filelock==3.13.1 ; python_full_version == "3.10.12"
+fonttools==4.47.0 ; python_full_version == "3.10.12"
+fsspec==2023.12.2 ; python_full_version == "3.10.12"
+huggingface-hub==0.20.2 ; python_full_version == "3.10.12"
+idna==3.6 ; python_full_version == "3.10.12"
+ipython==8.19.0 ; python_full_version == "3.10.12"
+jedi==0.19.1 ; python_full_version == "3.10.12"
+jinja2==3.1.2 ; python_full_version == "3.10.12"
+joblib==1.3.2 ; python_full_version == "3.10.12"
+kiwisolver==1.4.5 ; python_full_version == "3.10.12"
+langcodes==3.3.0 ; python_full_version == "3.10.12"
+markupsafe==2.1.3 ; python_full_version == "3.10.12"
+matplotlib-inline==0.1.6 ; python_full_version == "3.10.12"
+matplotlib==3.8.2 ; python_full_version == "3.10.12"
+murmurhash==1.0.10 ; python_full_version == "3.10.12"
+networkx==3.2.1 ; python_full_version == "3.10.12"
+nmslib==2.1.1 ; python_full_version == "3.10.12"
+numpy==1.21.5 ; python_full_version == "3.10.12"
+nvidia-cublas-cu11==11.10.3.66 ; platform_system == "Linux" and python_full_version == "3.10.12"
+nvidia-cuda-nvrtc-cu11==11.7.99 ; platform_system == "Linux" and python_full_version == "3.10.12"
+nvidia-cuda-runtime-cu11==11.7.99 ; platform_system == "Linux" and python_full_version == "3.10.12"
+nvidia-cudnn-cu11==8.5.0.96 ; platform_system == "Linux" and python_full_version == "3.10.12"
+packaging==23.2 ; python_full_version == "3.10.12"
+pandas==1.4.4 ; python_full_version == "3.10.12"
+parso==0.8.3 ; python_full_version == "3.10.12"
+pathy==0.10.3 ; python_full_version == "3.10.12"
+pexpect==4.9.0 ; sys_platform != "win32" and python_full_version == "3.10.12"
+pillow==10.2.0 ; python_full_version == "3.10.12"
+preshed==3.0.9 ; python_full_version == "3.10.12"
+prompt-toolkit==3.0.43 ; python_full_version == "3.10.12"
+psutil==5.9.7 ; python_full_version == "3.10.12"
+ptyprocess==0.7.0 ; sys_platform != "win32" and python_full_version == "3.10.12"
+pure-eval==0.2.2 ; python_full_version == "3.10.12"
+pybind11==2.6.1 ; python_full_version == "3.10.12"
+pydantic-core==2.14.6 ; python_full_version == "3.10.12"
+pydantic==2.5.3 ; python_full_version == "3.10.12"
+pygments==2.17.2 ; python_full_version == "3.10.12"
+pyparsing==3.1.1 ; python_full_version == "3.10.12"
+pysbd==0.3.4 ; python_full_version == "3.10.12"
+python-dateutil==2.8.2 ; python_full_version == "3.10.12"
+pytz==2023.3.post1 ; python_full_version == "3.10.12"
+pyyaml==6.0.1 ; python_full_version == "3.10.12"
+regex==2023.12.25 ; python_full_version == "3.10.12"
+requests==2.31.0 ; python_full_version == "3.10.12"
+safetensors==0.4.1 ; python_full_version == "3.10.12"
+scikit-learn==1.1.1 ; python_full_version == "3.10.12"
+scipy==1.10.1 ; python_full_version == "3.10.12"
+scispacy==0.5.3 ; python_full_version == "3.10.12"
+seqeval==1.2.2 ; python_full_version == "3.10.12"
+setuptools==69.0.3 ; python_full_version == "3.10.12"
+six==1.16.0 ; python_full_version == "3.10.12"
+smart-open==6.4.0 ; python_full_version == "3.10.12"
+spacy-legacy==3.0.12 ; python_full_version == "3.10.12"
+spacy-loggers==1.0.5 ; python_full_version == "3.10.12"
+spacy==3.6.1 ; python_full_version == "3.10.12"
+srsly==2.4.8 ; python_full_version == "3.10.12"
+stack-data==0.6.3 ; python_full_version == "3.10.12"
+thinc==8.1.12 ; python_full_version == "3.10.12"
+threadpoolctl==3.2.0 ; python_full_version == "3.10.12"
+tokenizers==0.13.3 ; python_full_version == "3.10.12"
+torch==1.13.1 ; python_full_version == "3.10.12"
+tqdm==4.66.1 ; python_full_version == "3.10.12"
+traitlets==5.14.1 ; python_full_version == "3.10.12"
+transformers==4.30.2 ; python_full_version == "3.10.12"
+typer==0.9.0 ; python_full_version == "3.10.12"
+typing-extensions==4.9.0 ; python_full_version == "3.10.12"
+urllib3==2.1.0 ; python_full_version == "3.10.12"
+wasabi==1.1.2 ; python_full_version == "3.10.12"
+wcwidth==0.2.13 ; python_full_version == "3.10.12"
+wheel==0.42.0 ; platform_system == "Linux" and python_full_version == "3.10.12"
