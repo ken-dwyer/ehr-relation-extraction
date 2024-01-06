@@ -1,8 +1,8 @@
 # ======Generate data variables========
 task=ner
-input_dir=/home/dwyer/datasets/n2c2/2018_sample
+input_dir=/databricks/driver/datasets/ner_sample
 ade_dir=ade_corpus
-target_dir=datasets/ner_sample
+target_dir=/databricks/driver/datasets/preprocessed/ner_sample
 max_seq_len=512
 dev_split=0
 tokenizer=biobert-base
@@ -10,13 +10,13 @@ file_ext=txt
 sep=" "
 
 # ========BioBERT NER training variables========
-ner_biobert_save_dir=/home/dwyer/workspace/ehr-relation-extraction/output/ner_sample
-ner_biobert_data_dir=/home/dwyer/workspace/ehr-relation-extraction/datasets/ner_sample
+ner_biobert_save_dir=/databricks/driver/output/ner_sample
+ner_biobert_data_dir=/databricks/driver/datasets/preprocessed/ner_sample
 ner_biobert_model_name=dmis-lab/biobert-large-cased-v1.1
 ner_biobert_max_len=512
-ner_biobert_batch_size=2
-ner_biobert_epochs=20
-ner_biobert_save_steps=20
+ner_biobert_batch_size=4
+ner_biobert_epochs=30
+ner_biobert_save_steps=100
 ner_biobert_seed=0
 
 # ========BioBERT RE training variables========
@@ -63,6 +63,7 @@ train-biobert-ner:
     --do_train \
     --do_eval \
     --do_predict \
+    --report_to "none" \
     --overwrite_output_dir
 
 # Trains the BiLSTM NER model
