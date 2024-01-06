@@ -202,9 +202,14 @@ def main():
     print('\n')
 
     # Data is already shuffled, just split for dev set
-    dev_split_idx = int((1 - args.dev_split) * len(train_dev))
-    train = train_dev[:dev_split_idx]
-    devel = train_dev[dev_split_idx:]
+    if int(args.dev_split) > 0:
+        dev_split_idx = int((1 - args.dev_split) * len(train_dev))
+        train = train_dev[:dev_split_idx]
+        devel = train_dev[dev_split_idx:]
+    else:
+        # DEBUGGING: Use the entire train set as the dev set
+        train = train_dev
+        devel = train_dev
 
     # Data for NER
     if args.task.lower() == 'ner':
