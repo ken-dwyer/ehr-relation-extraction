@@ -1,20 +1,20 @@
 # ======Generate data variables========
-task=re
-input_dir=data/
-ade_dir=ade_corpus/
-target_dir=biobert_re/dataset/
-max_seq_len=128
+task=ner
+input_dir=/home/dwyer/datasets/n2c2/2018
+ade_dir=ade_corpus
+target_dir=ner_dataset
+max_seq_len=256
 dev_split=0.1
 tokenizer=biobert-base
-file_ext=tsv
-sep=tab
+file_ext=txt
+sep=" "
 
 # ========BioBERT NER training variables========
-ner_biobert_save_dir=./output
-ner_biobert_data_dir=./dataset
+ner_biobert_save_dir=/home/dwyer/workspace/ehr-relation-extraction/ner_output
+ner_biobert_data_dir=/home/dwyer/workspace/ehr-relation-extraction/ner_dataset
 ner_biobert_model_name=dmis-lab/biobert-large-cased-v1.1
-ner_biobert_max_len=128
-ner_biobert_batch_size=8
+ner_biobert_max_len=256
+ner_biobert_batch_size=4
 ner_biobert_epochs=1
 ner_biobert_save_steps=4000
 ner_biobert_seed=0
@@ -40,7 +40,6 @@ generate-data:
 	python generate_data.py \
 	--task ${task} \
 	--input_dir ${input_dir} \
-	--ade_dir ${ade_dir} \
 	--target_dir ${target_dir} \
 	--max_seq_len ${max_seq_len} \
 	--dev_split ${dev_split} \

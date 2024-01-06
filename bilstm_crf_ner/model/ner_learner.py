@@ -1,13 +1,10 @@
 """ Works with pytorch 0.4.0 """
 
-import spacy
 from .core import *
 from .data_utils import pad_sequences, minibatches, get_chunks
 from .crf import CRF
 from .general_utils import Progbar
 from torch.optim.lr_scheduler import StepLR
-
-if os.name == "posix": from allennlp.modules.elmo import Elmo, batch_to_ids # AllenNLP is currently only supported on linux
 
 
 class NERLearner(object):

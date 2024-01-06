@@ -26,6 +26,7 @@ def parse_arguments():
 
     parser.add_argument("--ade_dir", type=str,
                         help="Directory with ADE corpus. Default is None.",
+                        required=False,
                         default=None)
 
     parser.add_argument("--target_dir", type=str,

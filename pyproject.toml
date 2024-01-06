@@ -1,0 +1,28 @@
+[tool.poetry]
+name = "ehr-relation-extraction"
+version = "0.1.0"
+description = ""
+authors = ["Ken Dwyer <kdd133@gmail.com>"]
+readme = "README.md"
+packages = [{include = "ehr_relation_extraction"}]
+
+[tool.poetry.dependencies]
+python = "3.10.12"
+scispacy = "0.5.3"
+torch = "1.13.1"
+transformers = "4.30.2"
+numpy = "1.21.5"
+seqeval = "^1.2.2"
+pandas = "1.4.4"
+filelock = "^3.13.1"
+scikit-learn = "1.1.1"
+networkx = "^3.2.1"
+matplotlib = "^3.8.2"
+en-ner-bc5cdr-md = {url = "https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.3/en_ner_bc5cdr_md-0.5.3.tar.gz"}
+ipython = "^8.19.0"
+accelerate = "0.20.3"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
